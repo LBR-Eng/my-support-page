@@ -1,45 +1,65 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/**
+ * Comprehensive Elo Touch-inspired styling.
+ * Color scheme: Blue, White, Orange.
+ */
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: white;
-    color: #333;
-}
-
-h1, h2, h3 {
-    font-family: 'Helvetica', sans-serif;
-    color: #003DA5;
-}
-
-.button {
-    background-color: #FFA500; /* Orange Accent */
+/* Navigation Bar */
+nav {
+    background-color: blue;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 16px;
 }
 
-.button:hover {
-    background-color: #007BFF; /* Blue on hover */
+/* Hero Section */
+.hero {
+    background-color: white;
+    color: blue;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.responsive {
+/* Solution Cards */
+.card {
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+}
+
+/* Features Section */
+.features {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.responsive img {
-    max-width: 100%;
-    height: auto;
+/* Call-to-Action */
+.cta {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
+/* Footer */
+footer {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .features {
+        flex-direction: column;
     }
 }
